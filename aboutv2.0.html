@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="navig.css">
+    <link rel="stylesheet" type="text/css" href="slider.css">
+    <link rel="stylesheet" type="text/css" href="card.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="foot.css">
+</head>
+<body>
+  <div class="header" id="header">
+    <img id="lg" src="logobeta.png" height="80" width="200">
+    <a href="home.html"><button id="dropbtn1" class="dropbtn">Home</button></a>
+    <a href="#"><button id="dropbtn2"class="dropbtn">Request</button></a>
+    <a href="#"><button id="dropbtn3" class="dropbtn">Work</button></a>
+    <a href="aboutv2.0.html"><button id="dropbtn4" class="dropbtn">About Us</button></a>
+  <div style="position:absolute;top:0;right: 0;padding-top: 10px;padding-right: 5px;">
+		<label class="switch">
+			<input type="checkbox" onclick="about();navg();card();log();fot()">
+			<span class="slider round"></span>
+	  </label>
+  </div>
+</div>
+<div class="snav" id="snav" align="right">
+  <button class="sbut"id="sbut1" onclick="document.getElementById('fade').style.display='block'" >
+    Sign in
+  </button>
+  <button class="sbut" id="sbut2" onclick="document.getElementById('fade1').style.display='block'">
+    Sign up
+  </button>
+</div>
+<div class="about-section1" id="about-section1">
+  <h1>About Page</h1>
+</div>
+
+<div class="about-section2" id="about-section2">
+<p>This website was made in accordance to the completion of the J-Component in Internet Web Programming and under the guidance of our Teachers.</p>
+<p>This website is designed to enable users to convert their handwritten notes to document by paying a small amount of money. This website works on the basis of the points system i.e. your money is converted into points and is then added to your account you can convert those points to money anytime you want. When you request a document conversion the point is transferred to the person typing the document for you and is thus serves as a payment for his/her hardwork. </p>
+</div>
+
+<h2 class="team" id="team">Our Team</h2>
+<div class="cards" id="cards1">
+	<div class="about-card" id="about-card1">
+		<img src="Shushant.PNG"/>
+        <p class="card-title" id="title1">Shushant</p>
+		<p class="des" id="des1">Sleepy Head</p>
+		<a href="mailto:shushantkumar.singh2019@vitstudent.ac.in"><img class="mail" id="mail1" src="mail.png"/></a>
+	</div>
+	<div class="about-card" id="about-card2">
+		<img src="https://www.w3schools.com/howto/img_avatar.png"/>
+		<p class="card-title" id="title2">Tanmay</p>
+		<p class="des" id="des2">Procastinator</p>
+		<a href="mailto:tanmay.mahajan2019@vitstudent.ac.in"><img class="mail" id="mail2" src="mail.png"/></a>
+	</div>
+	<div class="about-card" id="about-card3">
+		<img src="apoorvimg.jpg"/>
+		<p class="card-title" id="title3">Apoorv</p>
+		<p class="des" id="des3">Always Focused</p>
+		<a href="mailto:apoorv.yadav2019@vitstudent.ac.in"><img class="mail" id="mail3" src="mail.png"/></a>
+  </div></div>
+  <br>
+  <div class="foot" id="foot" align="center">
+    © copyright h2dconverter inc. all rights reserved
+  </div>
+  <div id="fade" class="box">
+    <form class="box1 form animate" action="/action_page.php" id="forms">
+        <div>
+            <span onclick="document.getElementById('fade').style.display='none'" class="close" title="Close PopUp">&times;</span>
+            <img src="profile.png" alt="Avatar" class="avatar">
+        </div>
+        <div>
+            <h1 class="Login">Login</h1>
+            <label for="Username">Username</label><br>
+            <input type="text" id="Username" name="Username" placeholder="Enter Username....." required><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" size="30" id="password" placeholder="Enter Password....." required><br><br>
+            <div style="text-align: right;">
+                <a href="#">Forgot Password</a><br>
+                <a href="SignUp.html">Don't have Account</a><br><br>
+            </div>
+            <div style="text-align: center;">
+                <button type="submit" style="background-color: yellowgreen; color: darkgreen;"><b>  Login  </b></button>&nbsp;
+                <button type="reset" style="background-color: orangered; color: black;"><b> Cancel </b></button>     
+            </div>
+        </div>
+    </form>
+</div>
+<div id="fade1" class="box">
+  <form class="form1 box2 animate" id="form1">
+      <div>
+          <span onclick="document.getElementById('fade1').style.display='none'" class="close" title="Close PopUp">&times;</span>
+          <img src="account.png" class="avatar" alt="profile">
+      </div>
+      <div>
+          <h1 class="SignUp">Sign Up</h1>
+          <label for="firstname">First Name</label>
+      <input type="text" id="firstname" name="First Name" placeholder="Enter First Name..." required>   
+      <label for="lastname">Last Name</label>
+      <input type="text" id="lastname" name="Last Name" placeholder="Enter Last Name..." required>    
+      <label for="dob">Date of Birth</label><br>
+      <select name="DOBMonth" style="border-radius: 4px; margin-left: 15%;" required>
+          <option> Month </option>
+          <option value="January">January</option>
+          <option value="Febuary">Febuary</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="August">August</option>
+          <option value="September">September</option>
+          <option value="October">October</option>
+          <option value="November">November</option>                        
+          <option value="December">December</option>
+      </select><select name="DOBDay" style="border-radius: 4px; margin-left: 5px;" required>
+          <option> Day </option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+      </select><select name="DOBYear" style="border-radius: 4px; margin-left: 5px;" required>
+          <option> Year </option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+          <option value="2014">2014</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
+          <option value="2011">2011</option>
+          <option value="2010">2010</option>
+          <option value="2009">2009</option>
+          <option value="2008">2008</option>
+          <option value="2007">2007</option>
+          <option value="2006">2006</option>
+          <option value="2005">2005</option>
+          <option value="2004">2004</option>
+          <option value="2003">2003</option>
+          <option value="2002">2002</option>
+          <option value="2001">2001</option>
+          <option value="2000">2000</option>
+          <option value="1999">1999</option>
+          <option value="1998">1998</option>
+          <option value="1997">1997</option>
+          <option value="1996">1996</option>
+          <option value="1995">1995</option>
+          <option value="1994">1994</option>
+          <option value="1993">1993</option>
+          <option value="1992">1992</option>
+          <option value="1991">1991</option>
+          <option value="1990">1990</option>    
+      </select><br>
+      <label for="email">E-mail</label>
+      <input type="email" id="email" size="30" name="Email" placeholder="Enter E-mail..." required>   
+      <label for="password">Password</label>
+      <input type="password" size="30" id="password" placeholder="Enter Password..." required><br>
+      <div style="text-align: center; padding-bottom: 5px; padding-top: 8px;">
+          <input type="checkbox" style="margin-left: -10px;" required>
+          <font style="color: white;">I agree to the Terms & Conditions</font></input>
+      </div>
+      <div style="text-align: right; padding-bottom: 15px;">
+          <a href="Login.html">Aready have an Account</a><br>
+      </div>
+          <div style="text-align: center;">
+              <button type="submit" style="background-color: yellowgreen; color: darkgreen;"><b>SignUp</b></button>&nbsp;
+              <button type="reset" style="background-color: orangered; color: black;"><b>Cancel</b></button>
+          </div> 
+      </h1>
+      </div>
+  </form>
+</div>
+</body>
+<script src="header.js"></script>
+<script src="card.js"></script>
+<script src="about.js"></script>
+<script src="login.js"></script>
+<script src="foot.js"></script>
+</html>

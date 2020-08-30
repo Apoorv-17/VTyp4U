@@ -1,0 +1,159 @@
+<!--just for the sake of increasing workload-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"><!--contains almost all the alphabets-->
+        <title>
+            Restaurant -Backender
+        </title>
+        <link rel="icon" href="icon.PNG" type="image/x-icon">
+    </head>
+    <style>
+        .dropbtn {
+        background-color: #ec0505;
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        padding-right: 30px;
+        padding-left: 30px;
+        border:none;
+        font-size: 13px;
+        margin-right: 30px;
+        border-radius: 16px;
+        border: none;
+        }
+
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 16px;
+        }
+
+        .dropdown-content a {
+        color: #121212;
+        padding: 12px 16px;
+        border-radius: 16px;
+        text-decoration: none;
+        display: block;
+        }
+
+        .dropdown-content a:hover {background-color: gray; color: white;}
+
+        .dropdown:hover .dropdown-content {display: block;}
+
+        .dropdown:hover .dropbtn {background-color:green;}
+        .imgbox{
+            border: 0px;
+            padding: 1px;
+            
+            margin: 3px;
+            color: black;
+            background-image: url(rest.jpg);
+            background-repeat: no-repeat;
+            
+        }
+        .box1{
+            background-color: #121212;
+            border: 3px solid white;
+            padding-bottom: 500px;
+            padding: 1px;
+            margin: 200px;
+            margin-left: 300px;
+            margin-right:300px;
+            opacity: 0.8;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            border-radius: 30px;
+        }
+        .genbox{
+            border:0px;
+            padding:1px;
+            margin: 20px;
+            color:white;
+            background-color: #292727;
+        }
+        .menbox{
+            border: 2px solid white;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .tag{
+            
+            background-color: #f70202;
+            border: 1px solid white;
+            padding-bottom: 50px;
+            padding: 1px;
+            margin: 2px;
+            opacity: 0.8;
+            color: white;
+            text-align: center;
+            border-radius: 3px;
+            font-size: 30px;
+        
+        }
+        .tag:hover{
+            background-color: rgb(62, 197, 62);
+            color:white;
+        }
+    </style>
+    <body bgcolor="black">
+        <span style="float: left;"><h2><img src="logobeta.png" height="150" width="250"></h2></span>
+        <span style="float:right"><div class="dropdown">
+            <a  href="https:www.google.com"><button class="dropbtn">Breakfast</button></a>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Lunch</button>
+            <div class="dropdown-content">
+              <a href="#Lunch">Chicken</a>
+              <a href="#Luch">Paneer</a>
+              <a href="#Lunch">Mix-veg</a>
+              <a href="#Lunch">Egg</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Drinks</button>
+            <div class="dropdown-content">
+              <a href="#Drinks">Tea</a>
+              <a href="#Drinks">Coffee</a>
+              <a href="#Drinks">Vani. Shake</a>
+              <a href="#Drinks">Choc. Shake</a>
+            </div>
+          </div>
+        </span><br><br><br><br><br>
+        <div class="imgbox">
+            <div class="box1">Welcome to Delocious</div>
+        </div><br><br>
+        <div class="genbox" style="font-size: 20px;text-align: center; "><table>
+            <tr><td><h1>Sizzling Hot Food Available</h1><br>We deliver high quality and DELOCIOUS food 
+            right to you walk in or order online. Always available for your service.<br><br><br>Call:- (+91)-9853423455<br><br>Address:- Shop no. 8, Corona nagar,<br>Durg, Chhattisgarh</td><td><img src="rest1.jpg" height="450px" width="700px"></td></tr>
+            </table>
+        </div>
+        <div class="genbox" style="font-size: 20px;"><table align="center">
+            <tr><td colspan="2" align="center" style="font-size: 50px;">Breakfast</td></tr>
+            <tr><a name="Dosa"></a><td class="menbox" style="background-image: url(dosa.jpg); padding:200px;padding-right: 300px;"><div class="tag">Rs. 200</div></td><td class="menbox" align="center" style="background-image: url(burger.jpg); padding:200px;padding-right: 300px;"><div class="tag">Rs. 250</div></td></tr>
+            <tr><td class="menbox" style="background-image: url(steak.jpg); padding:200px;padding-right: 300px;"><div class="tag">Rs. 300</div></td><td class="menbox" align="center" style="background-image: url(Omlet.jpg); padding:200px;padding-right: 300px;"><div class="tag">Rs. 100</div></td></tr>
+            </table>
+            <div class="genbox" style="font-size: 20px;"><table align="center">
+                <tr><a name="Lunch"></a><td colspan="2" align="center" style="font-size: 50px;">Lunch</td></tr>
+                <tr><td class="menbox" style="background-image: url(chicken.jpg); padding:200px;padding-right: 300px;"><div class="tag">Rs. 800</div></td><td class="menbox" align="center" style="background-image: url(paneer.jpg); padding:200px;padding-right: 300px;"><div class="tag">Rs. 750</div></td></tr>
+                <tr><td class="menbox" style="background-image: url(egg.jpg); padding:200px;padding-right: 300px;"><div class="tag">Rs. 650</div></td><td class="menbox" align="center" style="background-image: url(mixveg.jpg); padding:200px;padding-right: 300px;"><div class="tag">Rs. 500</div></td></tr>
+            </table>
+            <div class="genbox" style="font-size: 20px;"><table align="center">
+                <tr><a name="Drinks"></a><td colspan="2" align="center" style="font-size: 50px;">Drinks</td></tr>
+                <tr><td class="menbox" style="background-image: url(tea.jpg); padding:200px;padding-right: 300px;"><div class="tag">Rs. 70</div></td><td class="menbox" align="center" style="background-image: url(coffee.jpg); padding:200px;padding-right: 300px;"><div class="tag">Rs. 80</div></td></tr>
+                <tr><td class="menbox" style="background-image: url(vshake.jpg); padding:200px;padding-right: 300px;"><div class="tag">Rs. 70</div></td><td class="menbox" align="center" style="background-image: url(cshake.jpg); padding:200px;padding-right: 300px;"><div class="tag">Rs. 65</div></td></tr>
+            </table>
+        </div>
+    </body>
+</html>

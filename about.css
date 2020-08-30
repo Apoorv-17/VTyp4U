@@ -1,0 +1,89 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  .about-section1 {
+    padding: 3px;
+    margin: 2px;
+    margin-left: 2px;
+    margin-right:2px;
+    text-align: center;
+    background-color: #1f2327;
+    color: #66FCF1;
+    font-size:25px;
+  }
+  .about-section1>h1:after{
+    display:block;
+    content: '';
+    border-bottom: solid 3px #019fb6; 
+    padding-bottom: 0px; 
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+  .about-section1:hover>h1{
+      padding-bottom: 3px;
+      transition: all .4s ease-in-out;
+  }
+  .about-section1:hover>h1:after{
+      transform: scaleX(0.6);
+  }
+  .about-section2 {
+    border: 3px solid black;
+    padding: 15px;
+    text-align: Left;
+    background-image:url(y-so-serious.png);
+    font-size: large;
+  }
+  .title{
+    color: white;
+  }
+  body{
+      background-image: url("back.png");
+      color: #C5C6C7;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+  }
+  .team{
+      text-align:center;
+      color: #66FCF1;
+      font-size:x-large;
+  }
+  .team:after{
+    display:block;
+    content: '';
+    border-bottom: solid 3px #019fb6;  
+    padding-bottom: 20px;
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+  .team:hover:after{
+      transform: scaleX(0.2);
+  }
+  .light-mode{
+      background-image: url("light_honeycomb.png");
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+  }
+  .about-section1-light{
+      background-color: gainsboro;
+      color:black;
+      border: 1px solid white;
+  }
+  .about-section2-light{
+      background-image: url("y-so-serious-white.png");
+      color:black;
+      border: 3px solid white;
+  }
+  .team-light{
+      color:black;
+  }
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }

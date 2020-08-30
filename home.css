@@ -1,0 +1,32 @@
+html {
+    box-sizing:border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body{
+      background-image: url("back.png");
+      color: #C5C6C7;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+  }
+  .light-mode{
+      background-image: url("light_honeycomb.png");
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+  }
+  .para{
+      background-image: url("y-so-serious.png");
+      color:whitesmoke;
+      padding-top: 20px;
+      padding-bottom:20px;
+      padding-left:60px;
+      margin-top:55px;
+      margin-bottom:55px;
+  }
+  .para-light{
+      background-image:url("y-so-serious-white.png");
+      color:black;
+  }

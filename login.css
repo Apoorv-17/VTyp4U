@@ -1,0 +1,241 @@
+.snav{
+    box-sizing: border-box;
+    background-color: #121212;
+    padding:6px;
+    padding-right: 100px;
+    position:sticky;
+  }
+  .sbut{
+    border:2px solid white;
+    border-radius: 30px;
+    color:white;
+    background-color: inherit;
+    font-size: 20px;
+    padding:7px;
+    padding-left:14px;
+    padding-right:14px;
+  }
+  .sbut:hover{
+    background-color: white;
+    border:2px solid black;
+    color:black;
+  }
+  .snav-light{
+    background-color: rgb(184, 184, 184);
+  }
+  .sbut-light{
+    border:2px solid black;
+    color:black;
+  }
+  .sbut-light:hover{
+    background-color: black;
+    color:white;
+  }
+  .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+  .box{
+        display:none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    .box1{
+        margin-top: 15px;
+        width: 370px;
+        height: auto;
+        border: 1px solid #45A29E;
+        border-radius: 8px;
+        margin-top: 100px;
+        margin-left: 500px;
+        position: fixed;
+        background-color:black;
+        box-sizing: border-box;
+        padding: 70px 30px;
+    }
+
+    .avatar{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
+        left: calc(50% - 50px);
+    }
+
+    .close {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: white;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .close:hover,.close:focus {
+        color: red;
+        cursor: pointer;
+    }
+
+    .Login{
+        margin: 0;
+        padding: 0 0 20px;
+        text-align: center;
+        color: #66FCF1;
+    }
+
+
+    .box1:hover{
+        box-shadow: 0 2px 5px 4px #ccc;
+    }
+
+    .form label {
+        color: cyan;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 10px;
+    }
+
+    .form input {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid white;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: white;
+        font-size: 16px;
+    }
+
+    .form button {
+        border: none;
+        outline: none;
+        height: 30px;
+        border-radius: 6px;
+        font-size: medium;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        vertical-align: 5px;
+        transition: transform .5s;
+    }
+    .form button:hover{
+        transform: scale(1.1);
+	    box-shadow: 0 8px 6px -6px white;
+        cursor: pointer;
+    }
+
+    .form a{
+        font-size: 12px;
+        line-height: 20px;
+        color: darkcyan;
+        text-decoration: none;
+    }
+
+    .form a:hover{
+        color: gold;
+    }
+
+    .animate {
+        animation: zoom 0.6s
+    }
+    .box2{
+        margin-top: 15px;
+        width: 400px;
+        height: 560px;
+        border: 1px solid orange;
+        border-radius: 8px;
+        margin-top: 75px;
+        margin-left: 500px;
+        position: absolute;
+        background-color:black;
+        box-sizing: border-box;
+        padding: 70px 30px;
+    }
+
+    .SignUp{
+        margin: 0;
+        padding: 0 0 8px;
+        text-align: center;
+        color: orangered;
+    }
+    .form1 label {
+        color: gold;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 10px;
+    }
+
+    .form1 input[type=text], input[type=password], input[type=email], input[type=button] {
+        width: 100%;
+        margin-bottom: 15px;
+        border: none;
+        border-bottom: 1px solid white;
+        background: transparent;
+        outline: none;
+        height: 30px;
+        color: white;
+        font-size: 15px;
+    }
+
+    .form1 select{
+        margin-top: 2px;
+        margin-bottom: 12px;
+        border: none;
+        background: transparent;
+        outline: none;
+        height: 30px;
+        font: bold;
+        color: grey;
+        font-size: 16px;
+    }
+
+
+    .form1 button {
+        border: none;
+        outline: none;
+        height: 30px;
+        border-radius: 6px;
+        font-size: medium;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        vertical-align: 5px;
+        transition: transform .5s;
+    }
+    .form1 button:hover{
+        transform: scale(1.1);
+	    box-shadow: 0 8px 6px -6px white;
+        cursor: pointer;
+    }
+
+    .form1 a{
+        font-size: 12px;
+        line-height: 20px;
+        color: yellow;
+        text-decoration: none;
+    }
+
+    .form1 a:hover{
+        color: pink;
+    }
+
+    .box2:hover{
+        box-shadow: 0 2px 5px 4px #ccc;
+    }
+    .animate {
+        animation: zoom 0.6s
+    }
+    @keyframes zoom {
+        from {transform: scale(0)}
+        to {transform: scale(1)}
+    }
